@@ -74,7 +74,6 @@ SoundFile==0.10.3.post1
 threadpoolctl==2.1.0
 tokenizers==0.10.2
 torch==1.6.0
-torchvision==0.7.0
 tqdm==4.60.0
 traitlets==4.3.3
 transformers==4.5.1
