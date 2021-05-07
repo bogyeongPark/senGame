@@ -72,6 +72,16 @@ body {
 .container:empty {
   background: #263032;
 }
+.btn-info {
+  display: flex;
+  text-align: center;
+  box-sizing: border-box;
+  background: #122023;
+  border: 1px solid #596265;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 900;
+}
 .word {
   box-sizing: border-box;
   background: #122023;
@@ -81,6 +91,7 @@ body {
   cursor: pointer;
   font-weight: 700;
   user-select: none;
+  color: #fff;
 }
 .word:active {
   transition: 0.25s ease;

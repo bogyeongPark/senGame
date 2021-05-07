@@ -2,21 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
     <title>senGame</title>
   </head>
   <body>
     <h1>중국어 단어 예문 뿌시기</h1>
     <div class="box">
       <form action="{{url_for('study')}}" method="POST">
-        <div class="box" id="zbox">
+        <div id="zbox">
           <p>중국어 예문을 입력해주세요</p>
           <textarea name="zhsen" rows="4" cols="50"></textarea>
           <br />
         </div>
-        <p>중국어 예문 한글 뜻을 입력해주세요</p>
-
-        <textarea name="kosen" rows="4" cols="50"></textarea>
-        <br />
+        <div id="kbox">
+          <p>중국어 예문 한글 뜻을 입력해주세요</p>
+          <textarea name="kosen" rows="4" cols="50"></textarea>
+          <br />
+        </div>
         <input type="submit" class="btn-info" value="Done" />
       </form>
     </div>
